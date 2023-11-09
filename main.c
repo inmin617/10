@@ -3,21 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int argc, char *argv[]) {
+void main(void){
 	
-	int i=0;
-	char str[4];
-	str[0]='a';
-	str[1]='b';
-	str[2]='c';
-	str[3]='\0';
+	char src[]="The worst things to eat before you sleep";
+	char dst[100];
 	
-	printf("%s\n", str);
 	
-	while (str[i]!='\0'){
-		printf("%c", str[i]);
-		i++;
-	}
+	strcpy(dst, src);
 	
-	return 0;
-}
+	printf("copied string: %s", dst);
+	
+}  
+ 
